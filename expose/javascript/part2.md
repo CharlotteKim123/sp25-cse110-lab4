@@ -44,7 +44,7 @@ Line 12 will return 3 becaause length is declared outside of the loop and the in
 
 This function returns [50, 100, 150], although nothing will return in the console. In iteration 1 (i = 0), discountedPrice = 50. Then we push discountedPrice into discounted, resulting in [50]. In iteration 2 (i = 1), discountedPrice = 100. Then we push discountedPrice into discounted, resulting in [50, 100]. In iteration 3 (i = 2), discountedPrice = 150. Then we push discountedPrice into discounted, resulting in [50, 100, 150]. Then, the program goes to return discounted, which returns the array [50, 100, 150]. We can do this because we can change the array inside the constant variable discounted, but not the value of the variable.
 
-## Given the above Object, write the notation for:  (These should be in your part2.md)
+## 12. Given the above Object, write the notation for:  (These should be in your part2.md)
 ### A. Accessing the value of the name property in the student object
 student.name
 ### B. Accessing the value of the Grad Year property in the student object
@@ -56,7 +56,7 @@ student['Favorite Year'].name
 ### E. Access index zero in the array of the courseLoad property of the student object
 student.courseLoad[0]
 
-## Arithmetic
+## 13. Arithmetic
 ### '3' + 2
 32
 ### '3' - 2
@@ -74,7 +74,7 @@ student.courseLoad[0]
 ### '3' - undefined
 NaN
 
-## Comparison
+## 14. Comparison
 ### '2' > 1
 true
 ### '2' < '12'
@@ -88,9 +88,12 @@ false
 ### true === Boolean(2)
 true
 
-## Explain the difference between the == and === operators.
+## 15. Explain the difference between the == and === operators.
 
 While they both determine if both operands have the same value, == will convert the type the operands are in order to find that quality, while === does not do that, making it more accurate.
 
+## 17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. 
+
+The result will be [2,4,6]. In iteration 1 (i = 0), callback goes to doSomething, where 1 * 2 = 2. Then 2 gets pushed to newArr, which is [2]. In iteration 2 (i = 1), callback goes to doSomething, where 1*2 = 2. Then 2 gets pushed to newArr, which is [2]. In iteration 2 (i = 1), callback goes to doSomething, where 2 * 2 = 4. Then 4 gets pushed to newArr, which is [2, 4]. In iteration 2 (i = 1), callback goes to doSomething, where 3 * 2 = 6. Then 6 gets pushed to newArr, which is [2, 4, 6]. Then we return newArr, which is [2, 4, 6].
 
 
