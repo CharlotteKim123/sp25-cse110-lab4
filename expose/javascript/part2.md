@@ -96,6 +96,6 @@ While they both determine if both operands have the same value, == will convert 
 
 The result will be [2,4,6]. In iteration 1 (i = 0), callback goes to doSomething, where 1 * 2 = 2. Then 2 gets pushed to newArr, which is [2]. In iteration 2 (i = 1), callback goes to doSomething, where 1*2 = 2. Then 2 gets pushed to newArr, which is [2]. In iteration 2 (i = 1), callback goes to doSomething, where 2 * 2 = 4. Then 4 gets pushed to newArr, which is [2, 4]. In iteration 2 (i = 1), callback goes to doSomething, where 3 * 2 = 6. Then 6 gets pushed to newArr, which is [2, 4, 6]. Then we return newArr, which is [2, 4, 6].
 
-## 18. What is the output of the above code? 
+## 19. What is the output of the above code? 
 
 1432
